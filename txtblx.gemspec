@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "TODO: Description of Txtblx."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 4.2.1"
 
@@ -25,4 +25,5 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir["spec/**/*"]
 
+  s.add_dependency('snaps')
 end
