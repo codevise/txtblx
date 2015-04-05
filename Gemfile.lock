@@ -3,6 +3,13 @@ PATH
   specs:
     txtblx (0.0.1)
       rails (~> 4.2.1)
+      snaps
+
+PATH
+  remote: /home/vt/Code/snaps
+  specs:
+    snaps (0.0.1)
+      rails (~> 4.2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -142,5 +149,6 @@ DEPENDENCIES
   capybara
   factory_girl_rails
   rspec-rails
+  snaps!
   sqlite3
   txtblx!
