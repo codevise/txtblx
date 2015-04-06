@@ -8,6 +8,12 @@ module Txtblx
       snapshot!(tag: :published)
     end
 
+    auto_html_for :text do
+      html_escape
+      link :target => "_blank", :rel => "nofollow"
+      simple_format
+    end
+
     def to_param
       perma_id.to_s
     end

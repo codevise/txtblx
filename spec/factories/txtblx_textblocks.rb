@@ -1,10 +1,10 @@
 FactoryGirl.define do
-  factory :txtblx_textblock, :class => 'Txtblx::Textblock' do
+  factory :textblock, :class => 'Txtblx::Textblock' do
     perma_id 1
-    key "MyString"
-    description "MyString"
-    text "MyText"
-    text_html "MyText"
+    key "some.key"
+    description ""
+    text ""
+    text_html ""
     path "MyString"
 
     trait :published do

@@ -16,7 +16,10 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 4.2.1"
+  s.add_dependency("rails", "~> 4.2.1")
+  s.add_dependency('snaps')
+  s.add_dependency('activeadmin')
+  s.add_dependency('auto_html')
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency 'rspec-rails'
@@ -24,6 +27,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_girl_rails'
 
   s.test_files = Dir["spec/**/*"]
-
-  s.add_dependency('snaps')
 end

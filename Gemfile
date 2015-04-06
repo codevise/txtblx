@@ -14,3 +14,8 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 #
 gem 'snaps', path: '/home/vt/Code/snaps'
+
+# active admin for rails 4
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'auto_html'
