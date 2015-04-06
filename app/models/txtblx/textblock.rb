@@ -3,6 +3,7 @@ module Txtblx
     include Snaps.revision(default_tag: :draft)
 
     scope :published, -> { with_snaps_tag(:published) }
+    scope :drafts, -> { with_snaps_tag(:draft) }
 
     def publish
       snapshot!(tag: :published)

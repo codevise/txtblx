@@ -1,0 +1,12 @@
+de:
+  activerecord:
+    models:
+      textblock:
+        one: "Textblock"
+        other: "Textblöcke"
+    attributes:
+      textblock:
+        key: "Schlüssel"
+        description: "Beschreibung"
+        text: "Text"
+        text_html: "HTML"
