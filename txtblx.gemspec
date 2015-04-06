@@ -7,11 +7,11 @@ require "txtblx/version"
 Gem::Specification.new do |s|
   s.name        = "txtblx"
   s.version     = Txtblx::VERSION
-  s.authors     = ["Vangelis Tsoumenis"]
-  s.email       = ["kioopi@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Txtblx."
-  s.description = "TODO: Description of Txtblx."
+  s.authors     = ['Codevise Solutions Ltd']
+  s.email       = ['info@codevise.de']
+  s.homepage    = "https://github.com/codevise/txtblx"
+  s.summary     = "Editable, revisioned front-end texts for rails apps."
+  s.description = "Txtblx provides a simple way to allow Active Admin users to edit interface copy."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
