@@ -10,6 +10,7 @@ Revisioned, editable front-end texts.
 
 ### Migrate your database:
 
+   bundle exec rake txtblx:install:migrations
    bundle exec rake db:migrate
 
 ### Load helpers in your application controller:
