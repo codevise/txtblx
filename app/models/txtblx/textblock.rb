@@ -13,8 +13,7 @@ module Txtblx
     end
 
     def self.by_key(key)
-      Textblock.all.first
-      Textblock.published.find_by_key!(key)
+      Textblock.published.find_by_key(key)
     end
   end
 end

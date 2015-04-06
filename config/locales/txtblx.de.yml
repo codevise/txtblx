@@ -1,0 +1,3 @@
+de:
+  txtblx:
+    missing_key: "Textblock mit dem Schlüssel `%{key}` fehlt."
