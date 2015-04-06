@@ -25,12 +25,6 @@ PATH
       rails (~> 4.2.1)
       snaps
 
-PATH
-  remote: /home/vt/Code/snaps
-  specs:
-    snaps (0.0.1)
-      rails (~> 4.2.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -199,6 +193,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    snaps (0.0.1)
+      rails (~> 4.2.1)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -226,6 +222,6 @@ DEPENDENCIES
   capybara
   factory_girl_rails
   rspec-rails
-  snaps!
+  snaps
   sqlite3
   txtblx!
