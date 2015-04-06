@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150321131740) do
+ActiveRecord::Schema.define(version: 20150405222157) do
 
   create_table "snaps_tags", force: :cascade do |t|
     t.integer  "record_id"
@@ -20,6 +20,17 @@ ActiveRecord::Schema.define(version: 20150321131740) do
     t.datetime "superseded_at"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "txtblx_textblocks", force: :cascade do |t|
+    t.integer  "perma_id"
+    t.string   "key"
+    t.string   "description"
+    t.text     "text"
+    t.text     "text_html"
+    t.string   "path"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
