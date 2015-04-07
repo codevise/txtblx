@@ -35,10 +35,15 @@ module Txtblx
         end
 
         def update
-          super do
-            resource.publish if resource.valid?
-            true
-          end
+          result = super
+          resource.publish if resource.valid?
+          result
+        end
+
+        def create
+          result = super
+          resource.publish if resource.valid?
+          result
         end
 
         def find_resource
