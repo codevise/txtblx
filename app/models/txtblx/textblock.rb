@@ -10,9 +10,7 @@ module Txtblx
     end
 
     auto_html_for :text do
-      html_escape
-      link :target => "_blank", :rel => "nofollow"
-      simple_format
+      self.instance_eval(&Txtblx.config.auto_html_block)
     end
 
     def to_param
