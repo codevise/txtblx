@@ -1,5 +1,9 @@
 # Textblocks
 
+[![Gem Version](https://badge.fury.io/rb/txtblx.svg)](http://badge.fury.io/rb/txtblx)
+[![Build Status](https://travis-ci.org/codevise/txtblx.svg?branch=master)](https://travis-ci.org/codevise/txtblx)
+
+
 ## Editable, revisioned front-end texts for rails apps.
 
 Txtblx provides a simple way to allow Active Admin users to edit interface copy.
