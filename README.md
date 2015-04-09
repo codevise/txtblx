@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/txtblx.svg)](http://badge.fury.io/rb/txtblx)
 [![Build Status](https://travis-ci.org/codevise/txtblx.svg?branch=master)](https://travis-ci.org/codevise/txtblx)
+[![Code Climate](https://codeclimate.com/github/codevise/txtblx/badges/gpa.svg)](https://codeclimate.com/github/codevise/txtblx)
+[![Test Coverage](https://codeclimate.com/github/codevise/txtblx/badges/coverage.svg)](https://codeclimate.com/github/codevise/txtblx)
 
 
 ## Editable, revisioned front-end texts for rails apps.

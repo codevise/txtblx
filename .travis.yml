@@ -9,3 +9,7 @@ cache: bundler
 before_script: bundle exec rake app:db:schema:load
 
 script: bundle exec rspec
+
+addons:
+  code_climate:
+    repo_token: 38de74e4139e9a3461685f7330dcf5da35c89a90b660b3e3bf7909cb4a5117b2
