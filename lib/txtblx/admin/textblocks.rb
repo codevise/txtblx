@@ -1,27 +1,38 @@
 module Txtblx
   if defined?(ActiveAdmin)
     ActiveAdmin.register Textblock, as: 'Textblock' do
-      actions :all, except: [:destroy]
+      actions :all
+      filter :description
+      filter :text
 
       index do
-        column :key do |textblock|
-          link_to(textblock.key, admin_textblock_path(textblock))
+        column :key if authorized?(:manage, Textblock)
+        column :description do |textblock|
+          link_to(textblock.description, admin_textblock_path(textblock))
         end
-        column :description
       end
 
-      show do |textblock|
+      show title: :description do |textblock|
         div :class => :columns do
           attributes_table_for textblock do
-            row :key
+            row :key if authorized?(:manage, textblock)
             row :description
-            row :text
+            row :text do
+              textblock.text_html
+            end
           end
         end
       end
 
-      form do |f|
-        f.inputs :key, :description, :text
+      form title: :description do |f|
+        if authorized?(:manage, f.object)
+          f.inputs :key, :description, :text
+        else
+          f.inputs do
+            li("<label>Beschreibung</label> <b>#{f.object.description}</b>".html_safe)
+            f.input  :text
+          end
+        end
         f.actions do
           f.action :submit
           f.action :cancel, as: :link, button_html: {class: 'button'}

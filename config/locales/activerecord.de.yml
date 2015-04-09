@@ -5,7 +5,7 @@ de:
         one: "Textblock"
         other: "Textblöcke"
     attributes:
-      textblock:
+      "txtblx/textblock":
         key: "Schlüssel"
         description: "Beschreibung"
         text: "Text"

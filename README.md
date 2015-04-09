@@ -34,6 +34,12 @@ Txtblx comes with an ActiveAdmin page to manage Textblocks
 ### CanCan Integration
 
 Txtblx provides default CanCan Abilities for its model.
+
+There are two sets of abilities:
+
+   * Full
+   * Editor can only change text and may not create or delete textblocks.
+
 Use the AbilityMixin to grant them to your user model inside your Ability-class.
 
     # app/models/ability.rb
@@ -42,7 +48,11 @@ Use the AbilityMixin to grant them to your user model inside your Ability-class.
       include Txtblx::AbilityMixin
 
       def initialize(user)
-        txtblx_abilities(user)
+        txtblx_editor_abilities(user)
+
+        if user.admin?
+          txtblx_full_abilities(user)
+        end
       end
     end
 
