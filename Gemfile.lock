@@ -19,7 +19,7 @@ GIT
 PATH
   remote: .
   specs:
-    txtblx (0.0.1)
+    txtblx (0.0.2)
       activeadmin
       auto_html
       rails (~> 4.2.1)
