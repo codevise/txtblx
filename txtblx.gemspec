@@ -17,18 +17,17 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency("rails", "~> 4.2.1")
-  s.add_dependency('snaps')
+  s.add_dependency('snaps', "~> 0")
   s.add_dependency('activeadmin')
-  s.add_dependency('auto_html')
+  s.add_dependency('auto_html', "~> 1.6.4")
 
-  s.add_development_dependency "sqlite3"
-  s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'capybara'
-  s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency("sqlite3", "~> 1.3.10")
+  s.add_development_dependency('rspec-rails', "~> 3.2")
+  s.add_development_dependency('capybara', "~> 2.4.4")
+  s.add_development_dependency('factory_girl_rails', "~> 4.5")
 
   # Test coverage via Codeclimate
   s.add_development_dependency 'codeclimate-test-reporter'
 
   s.test_files = Dir["spec/**/*"]
-
 end
