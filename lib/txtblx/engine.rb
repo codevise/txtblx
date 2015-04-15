@@ -8,9 +8,5 @@ module Txtblx
       g.assets false
       g.helper false
     end
-
-    initializer :txtblx_admin do
-      ActiveAdmin.application.load_paths.unshift File.join(config.root, 'lib/txtblx/admin')
-    end
   end
 end

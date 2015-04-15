@@ -34,8 +34,13 @@ Txtblx provides a simple way to allow Active Admin users to edit interface copy.
 
 ## Active Admin Integration
 
-Txtblx comes with an ActiveAdmin page to manage Textblocks
+Txtblx comes with an ActiveAdmin page to manage Textblocks.
+Load it in an initializer:
 
+    # config/initializers/txtblx.rb
+    Txtblx.configure do |config|
+      config.load_active_admin
+    end
 
 ### CanCan Integration
 

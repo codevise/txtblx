@@ -9,5 +9,10 @@ module Txtblx
         simple_format
       end
     end
+
+    def load_active_admin
+      admin_path = File.join(Txtblx::Engine.root, 'lib', 'txtblx', 'admin')
+      ActiveAdmin.application.load_paths.unshift(admin_path)
+    end
   end
 end
