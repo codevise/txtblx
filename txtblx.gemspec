@@ -21,6 +21,9 @@ Gem::Specification.new do |s|
   s.add_dependency('activeadmin')
   s.add_dependency('auto_html', "~> 1.6.4")
 
+  s.add_dependency('cancancan', '~> 1.10')
+  # s.add_dependency('devise', '~> 3.4.1')
+
   s.add_development_dependency("sqlite3", "~> 1.3.10")
   s.add_development_dependency('rspec-rails', "~> 3.2")
   s.add_development_dependency('capybara', "~> 2.4.4")

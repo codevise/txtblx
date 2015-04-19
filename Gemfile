@@ -8,3 +8,5 @@ gem 'snaps'
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'auto_html'
+gem 'cancancan'
+gem 'devise'
