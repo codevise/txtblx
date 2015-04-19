@@ -9,6 +9,10 @@ module Txtblx
 
     describe '#update' do
       it 'updates text and text_html' do
+
+        user = create(:user)
+        sign_in(user)
+
         put(:update, id: @textblock, use_route: 'textblock', textblock: { text: 'Some Text' })
 
         txt = Textblock.published.find_by_perma_id(@textblock.perma_id)
