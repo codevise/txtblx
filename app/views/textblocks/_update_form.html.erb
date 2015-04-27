@@ -1,0 +1,13 @@
+<%
+  textblock = @textblock if @textblock.present?
+%>
+
+<%= form_for textblock do |f| %>
+  <%= f.inputs do %>
+    <%= f.input(:text) %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, as: :button %>
+  <% end %>
+<% end %>

@@ -1,0 +1,7 @@
+<%
+  textblock = @textblock if @textblock.present?
+%>
+
+<div class="txtblx <%= 'editable' if can?(:update, textblock) %>" data-key="<%= textblock.key %>">
+  <%= textblock.text_html %>
+</div>
