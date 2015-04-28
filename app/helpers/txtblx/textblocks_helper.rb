@@ -8,7 +8,7 @@ module Txtblx
          text =  I18n.t('txtblx.missing_key', key: key)
       end
 
-      content_tag(:div, text)
+      content_tag(:div, raw(text))
     end
   end
 end
