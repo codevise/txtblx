@@ -3,7 +3,6 @@ namespace :txtblx do
   desc "Import Textblocks from files"
 
   task import: :environment do
-
     txtdir = Rails.root.join('textblocks')
     puts "Looking for markdown files in #{txtdir}"
     Dir.glob(File.join(txtdir, "*.md")) do |mdfile|
@@ -30,6 +29,24 @@ namespace :txtblx do
         txtb.save
         txtb.publish
       end
+    end
+  end
+
+  task export: :environment do
+    txtdir = Rails.root.join('textblocks')
+
+    puts "Writing markdown files in #{txtdir}"
+
+    Txtblx::Textblock.published.each do |txt|
+      filename = File.join(txtdir, "#{txt.key}.md")
+      description_indicator = '->'
+
+      puts " -- Writing #{filename}"
+      File.write(filename, <<-TXTBLC)
+#{description_indicator}#{txt.description}
+
+#{txt.text}
+TXTBLC
     end
   end
 

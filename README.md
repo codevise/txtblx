@@ -82,3 +82,15 @@ To change the `auto_html` config create an initializer in your app:
         simple_format
       end
     end
+
+# Import/Export Rake Tasks
+
+Txtblx can export the Textblocks to a set of markdown files by running:
+
+    bundle exec rake txtblx:export
+
+For each Textblock one markdown file will be written into the directory 'textblocks' in your rails root dir.
+
+You can create Textblock instances from these file by running:
+
+    bundle exec rake txtblx:import
